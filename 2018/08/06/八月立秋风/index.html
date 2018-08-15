@@ -33,8 +33,24 @@
     border-left-color: #1E92FB;    /*左边框颜色*/
 }
 </style>
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -90,7 +106,7 @@
 
 
 
-  <meta name="keywords" content="-JavaScript," />
+  <meta name="keywords" content="JavaScript," />
 
 
 
@@ -104,10 +120,10 @@
 
 
 <meta name="description" content="Quick StartCreate a new post欢迎使用 Cmd Markdown 编辑阅读器">
-<meta name="keywords" content="-JavaScript">
+<meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="八月立秋风">
-<meta property="og:url" content="http://yoursite.com/2018/08/06/八月立秋风/index.html">
+<meta property="og:url" content="https://fanqidong.github.io/2018/08/06/八月立秋风/index.html">
 <meta property="og:site_name" content="樊启东">
 <meta property="og:description" content="Quick StartCreate a new post欢迎使用 Cmd Markdown 编辑阅读器">
 <meta property="og:locale" content="zh-Hans">
@@ -116,7 +132,7 @@
 <meta property="og:image" content="https://www.zybuluo.com/static/img/toolbar-manager.jpg">
 <meta property="og:image" content="https://www.zybuluo.com/static/img/toolbar-reader.jpg">
 <meta property="og:image" content="https://www.zybuluo.com/static/img/file-list.png">
-<meta property="og:updated_time" content="2018-08-14T05:12:33.091Z">
+<meta property="og:updated_time" content="2018-08-15T08:43:47.522Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="八月立秋风">
 <meta name="twitter:description" content="Quick StartCreate a new post欢迎使用 Cmd Markdown 编辑阅读器">
@@ -150,7 +166,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/08/06/八月立秋风/"/>
+  <link rel="canonical" href="https://fanqidong.github.io/2018/08/06/八月立秋风/"/>
 
 
 
@@ -358,7 +374,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/06/八月立秋风/">
+    <link itemprop="mainEntityOfPage" href="https://fanqidong.github.io/2018/08/06/八月立秋风/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="樊启东">
@@ -451,6 +467,37 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2,252
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  8
+                </span>
+              
+            </div>
           
 
           
@@ -563,12 +610,49 @@
             
                 <div>
     
-        <div style="text-align:center;color: #22bfb6;font-size:24px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+        <div style="text-align:center;color: #22bfb6;font-size:.8rem;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
     
 </div>
             
         </div>
         
+
+    
+    <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2018/08/06/八月立秋风/">八月立秋风</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 樊启东 的个人博客">樊启东</a></p>
+  <p><span>发布时间:</span>2018年08月06日 - 19:08</p>
+  <p><span>最后更新:</span>2018年08月15日 - 16:08</p>
+  <p><span>原始链接:</span><a href="/2018/08/06/八月立秋风/" title="八月立秋风">https://fanqidong.github.io/2018/08/06/八月立秋风/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://fanqidong.github.io/2018/08/06/八月立秋风/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+      $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+        });
+    });  
+</script>
+
+      
+    </div>
+
 
     
 
@@ -609,7 +693,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/JavaScript/" rel="tag"><i class="fa fa-tags"></i> -JavaScript</a>
+            <a href="/tags/JavaScript/" rel="tag"><i class="fa fa-tags"></i> JavaScript</a>
           
         </div>
       
@@ -764,7 +848,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -847,7 +931,7 @@ var jiathis_config={
       <div class="footer-inner">
         <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-eye"></i>
+    <i class="fa fa-star"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">樊启东</span>
 
@@ -859,7 +943,9 @@ var jiathis_config={
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4
+<span class="post-count">博客全站共2.3k字</span>
+</div>
 
 
 
