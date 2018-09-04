@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>樊启东</title>
   
-  <subtitle>爱好前端，憧憬后端的攻城狮</subtitle>
+  <subtitle>前端攻城狮</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://fanqidong.github.io/"/>
