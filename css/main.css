@@ -1985,7 +1985,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cfdfb1;
+  background: #5393e5;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3183,7 +3183,7 @@ pre .javascript .function {
   cursor: url("https://www.easyicon.net/api/resizeApi.php?id=517252&size=32"), default;
 }
 #main {
-  background: url("http://www.pzpu.com/wp-content/uploads/2016/07/20160716044605-58.jpg") no-repeat center/cover;
+  background: url("../../images/bg.jpg") no-repeat center/cover;
 }
 .back-to-top.back-to-top-on {
   bottom: 20px !important;
