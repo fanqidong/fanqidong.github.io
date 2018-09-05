@@ -1985,7 +1985,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff0846;
+  background: #62ad5e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3181,9 +3181,6 @@ pre .javascript .function {
 }
 * {
   cursor: url("https://www.easyicon.net/api/resizeApi.php?id=517252&size=32"), default;
-}
-#main {
-  background: url("../../images/bg.jpg") no-repeat center/cover;
 }
 .posts-expand .post-eof {
   display: block;
