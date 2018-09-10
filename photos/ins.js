@@ -119,9 +119,8 @@
                     var minSrc = 'https://raw.githubusercontent.com/fanqidong/hexo-next/master/min_photos/' + data.link[i];
                     var src = 'https://raw.githubusercontent.com/fanqidong/hexo-next/master/photos/' + data.link[i];
                     var type = data.type[i];
-                    var target = src + (type === 'video' ? '.mp4' : '.jpg');
+                    var target = src + (type === 'video' ? '.mp4' : '');
                     // src += '.jpg';
-
                     liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">\
                   <a href="' + src + '" itemprop="contentUrl" data-size="640x640" data-type="' + type + '" data-target="' + target + '">\
                     <img class="reward-img" data-type="' + type + '" data-src="' + minSrc + '" src="' + minSrc + '" itemprop="thumbnail" onload="lzld(this)">\
