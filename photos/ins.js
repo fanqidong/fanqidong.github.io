@@ -140,7 +140,7 @@
 
         var replacer = function replacer(str) {
             var arr = str.split("/");
-            return "/assets/img/" + arr[arr.length - 1];
+            return "/assets/ins/" + arr[arr.length - 1];
         };
 
         var ctrler = function ctrler(data) {
@@ -471,7 +471,7 @@
                 return params;
             };
 
-            var openPhotoSwipe = function openPhotoSwipe(index, galleryElement, disableAnimation, fromURL) {
+            var openPhotoSwipe = function (index, galleryElement, disableAnimation, fromURL) {
                 var pswpElement = document.querySelectorAll('.pswp')[0],
                     gallery,
                     options,

@@ -1985,7 +1985,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fffc04;
+  background: #2fffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3179,16 +3179,94 @@ pre .javascript .function {
     text-align: justify;
   }
 }
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+textarea,
+p,
+th,
+td,
+em,
+button,
+blockquote {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei";
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  border: 0;
+  vertical-align: bottom;
+}
+em,
+b {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol {
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+button,
+input,
+select,
+textarea {
+  outline: none;
+  font-family: 'Microsoft Yahei';
+  -webkit-appearance: none;
+  appearance: none;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+a:focus {
+  outline: none;
+}
 * {
   cursor: url("https://www.easyicon.net/api/resizeApi.php?id=517252&size=32"), default;
-}
-.posts-expand .post-eof {
-  display: block;
-  margin: 80px auto 60px;
-  width: 100%;
-  height: 3px;
-  background-image: linear-gradient(to right, #ff0 0%, #00f 100%);
-  text-align: center;
 }
 .back-to-top.back-to-top-on {
   bottom: 20px !important;
@@ -3329,6 +3407,11 @@ pre .javascript .function {
     transform: scale(0.9);
     opacity: 0.7;
   }
+}
+.posts-expand .post-title {
+  color: #7000ff;
+  font-size: 40px;
+  border-left: 5px rgba(0,136,255,0.859) solid;
 }
 @-moz-keyframes fadePulse {
   0% {
