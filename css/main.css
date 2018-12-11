@@ -1985,7 +1985,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #bbc308;
+  background: #d6bed6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3409,9 +3409,11 @@ a:focus {
   }
 }
 .posts-expand .post-title {
-  color: #7000ff;
-  font-size: 40px;
-  border-left: 5px rgba(0,136,255,0.859) solid;
+  color: #555;
+  font-size: 2em;
+}
+.post-body p {
+  text-indent: 2em;
 }
 @-moz-keyframes fadePulse {
   0% {
