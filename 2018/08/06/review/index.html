@@ -131,7 +131,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/13702193-2f8ed8e77be2e041?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/13702193-e11aef08dd6f0cb7?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-12-10T08:30:43.888Z">
+<meta property="og:updated_time" content="2018-12-11T03:50:06.810Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端知识体系回顾-(HTML篇)">
 <meta name="twitter:description" content="HTML 篇浩瀚星辰，莫忘心记。——Abner">
@@ -477,7 +477,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  4,191
+                  4,190
                 </span>
               
 
@@ -520,7 +520,7 @@
 <p>2级DOM - 鉴于1级DOM仅以映射文档结构为目标，DOM2级面向更为宽广。通过对原有DOM的扩展，2级DOM通过对象接口增加了对鼠标和用户界面事件（DHTML长期支持鼠标与用户界面事件）、范围、遍历（重复执行DOM文档）和层叠样式表（CSS）的支持。同时也对DOM1的核心进行了扩展，从而可支持XML命名空间。</p>
 <p>3级DOM -通过引入统一方式载入和保存文档和文档验证方法对DOM进行进一步扩展，DOM3包含一个名为“DOM载入与保存”的新模块，DOM核心扩展后可支持XML1.0的所有内容，包括XML、Infoset、 XPath、和XML Base。</p>
 <p>浏览器对不同级别DOM的支持情况如下所示：<br><img src="http://upload-images.jianshu.io/upload_images/13702193-2f8ed8e77be2e041?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"><br>从图中可以看出，移动端常用的 webkit 内核浏览器目前只支持DOM2，而不支持DOM3 。</p>
-<h2 id="3、事件系统"><a href="#3、事件系统" class="headerlink" title="3、事件系统"></a>3、事件系统</h2><p>事件是用户与页面交互的基础，到目前为止，DOM事件从PC端的 鼠标事件(mouse) 发展到了 移动端的 触摸事件(touch) 和<br>手势事件(guesture)，touch事件描述了手指在屏幕操作的每一个细节，guesture 则是描述多手指操作时更为复杂的情况，总结如下：</p>
+<h2 id="3、事件系统"><a href="#3、事件系统" class="headerlink" title="3、事件系统"></a>3、事件系统</h2><p>事件是用户与页面交互的基础，到目前为止，DOM事件从PC端的 鼠标事件(mouse) 发展到了 移动端的 触摸事件(touch) 和手势事件(guesture)，touch事件描述了手指在屏幕操作的每一个细节，guesture是描述多手指操作时更为复杂的情况，总结如下：</p>
 <p>第一根手指放下，触发 touchstart，除此之外什么都不会发生</p>
 <p>手指滑动时，触发touchmove</p>
 <p>第二根手指放下，触发 gesturestart</p>
@@ -529,8 +529,7 @@
 <p>任意手指移动，持续触发 gesturechange</p>
 <p>第二根手指弹起时，触发 gestureend，以后将不会再触发 gesturechange</p>
 <p>触发第二根手指的 touchend</p>
-<p>触发touchstart (多根手指在屏幕上，提起一根，会刷新一次全局touch) _ ___</p>
-<p>弹起第一根手指，触发 touchend</p>
+<p>触发touchstart (多根手指在屏幕上，提起一根，会刷新一次全局touch) _ ___弹起第一根手指，触发 touchend</p>
 <p>更多关于手势事件的介绍请参考：<br>gesture事件处理复杂手势</p>
 <p>DOM2.0 模型将事件处理流程分为三个阶段，即 事件捕获阶段 、 事件处理阶段 、 事件冒泡阶段， 如图所示：<img src="http://upload-images.jianshu.io/upload_images/13702193-e11aef08dd6f0cb7?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
 <p>事件捕获 ：当用户触发点击事件后，顶层对象document 就会发出一个事件流，从最外层的DOM节点向目标元素节点传递，最终到达目标元素。</p>
@@ -565,12 +564,12 @@
 <p>localStorage的存储空间大约5M左右(不同浏览器可能不同，分HOST)，这个相当于一个5M大小的前端数据库，相比于cookie，可以节约带宽，但localStorage在浏览器隐私模式下是不可读取的，当存储数据超过了localStorage<br>的存储空间后会抛出异常。</p>
 <p>此外，H5还提供了逆天的websql和indexedDB，允许前端以关系型数据库的方式来存储本地数据，相对来说，这个功能目前应用的场景比较少，此处不作介绍。</p>
 <h2 id="7、浏览器缓存机制"><a href="#7、浏览器缓存机制" class="headerlink" title="7、浏览器缓存机制"></a>7、浏览器缓存机制</h2><p>浏览器缓存机制是指通过 HTTP 协议头里的 Cache-Control (或 Expires) 和 Last-Modified (或 Etag)等字段来控制文件缓存的机制。</p>
-<p>Cache-Control 用于控制文件在本地缓存有效时长。最常见的，比如服务器回包：Cache-Control:max-age=600表示文件在本地应该缓存，且有效时长是600秒 (从发出请求算起)。在接下来600秒内，如果有请求这个资源，浏览器不会发出 HTTP<br>请求，而是直接使用本地缓存的文件。</p>
-<p>Last-Modified 是标识文件在服务器上的最新更新时间。下次请求时，如果文件缓存过期，浏览器通过 If-Modified-Since<br>字段带上这个时间，发送给服务器，由服务器比较时间戳来判断文件是否有修改。如果没有修改，服务器返回304告诉浏览器继续使用缓存；如果有修改，则返回200，同时返回最新的文件。</p>
+<p>Cache-Control 用于控制文件在本地缓存有效时长。最常见的，比如服务器回包：Cache-Control:max-age=600表示文件在本地应该缓存，且有效时长是600秒 (从发出请求算起)。在接下来600秒内，如果有请求这个资源，浏览器不会发出 HTTP请求，而是直接使用本地缓存的文件。</p>
+<p>Last-Modified 是标识文件在服务器上的最新更新时间。下次请求时，如果文件缓存过期，浏览器通过 If-Modified-Since字段带上这个时间，发送给服务器，由服务器比较时间戳来判断文件是否有修改。如果没有修改，服务器返回304告诉浏览器继续使用缓存；如果有修改，则返回200，同时返回最新的文件。</p>
 <p>Cache-Control 通常与 Last-Modified 一起使用。一个用于控制缓存有效时间，一个在缓存失效后，向服务查询是否有更新。</p>
 <p>Cache-Control 还有一个同功能的字段：Expires。Expires 的值一个绝对的时间点，如：Expires: Thu, 10 Nov,2015 08:45:11 GMT，表示在这个时间点之前，缓存都是有效的。</p>
 <p>Expires 是 HTTP1.0 标准中的字段，Cache-Control 是 HTTP1.1标准中新加的字段，功能一样，都是控制缓存的有效时间。当这两个字段同时出现时，Cache-Control 是高优化级的。</p>
-<p>Etag 也是和 Last-Modified 一样，对文件进行标识的字段。不同的是，Etag的取值是一个对文件进行标识的特征字串。在向服务器查询文件是否有更新时，浏览器通过 If-None-Match字段把特征字串发送给服务器，由服务器和文件最新特征字串进行匹配，来判断文件是否有更新。没有更新回包304，有更新回包200。Etag 和<br>Last-Modified 可根据需求使用一个或两个同时使用。两个同时使用时，只要满足基中一个条件，就认为文件没有更新。</p>
+<p>Etag 也是和 Last-Modified 一样，对文件进行标识的字段。不同的是，Etag的取值是一个对文件进行标识的特征字串。在向服务器查询文件是否有更新时，浏览器通过 If-None-Match字段把特征字串发送给服务器，由服务器和文件最新特征字串进行匹配，来判断文件是否有更新。没有更新回包304，有更新回包200。Etag 和 Last-Modified 可根据需求使用一个或两个同时使用。两个同时使用时，只要满足基中一个条件，就认为文件没有更新。</p>
 <p>另外有两种特殊的情况：</p>
 <p>手动刷新页面(F5)，浏览器会直接认为缓存已经过期(可能缓存还没有过期)，在请求中加上字段：Cache-Control:max-age=0，发包向服务器查询是否有文件是否有更新。</p>
 <p>强制刷新页面(Ctrl+F5)，浏览器会直接忽略本地的缓存(有缓存也会认为本地没有缓存)，在请求中加上字段：Cache-Control:no-cache(或 Pragma:no-cache)，发包向服务重新拉取文件。</p>
@@ -578,7 +577,7 @@
 <p>window.history.back( )  返回到上一个页面</p>
 <p>window.history.forward( )  进入到下一个页面</p>
 <p>window.history.go( [delta] )  跳转到指定页面</p>
-<p>HTML5 对History Api 进行了增强，新增了两个Api 和一个事件，分别是pushState、replaceState 和<br>onpopstate：</p>
+<p>HTML5 对History Api 进行了增强，新增了两个Api 和一个事件，分别是pushState、replaceState 和 onpopstate：</p>
 <p>pushState是往history对象里添加一个新的历史记录，即压栈。</p>
 <p>replaceState 是替换history对象中的当前历史记录。</p>
 <p>当点击浏览器后退按钮或 js调用history.back 都会触发 onpopstate 事件。</p>
