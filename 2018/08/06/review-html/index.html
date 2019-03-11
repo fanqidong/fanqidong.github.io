@@ -108,7 +108,7 @@
 
 
 
-  <meta name="keywords" content="html," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -122,18 +122,18 @@
 
 
 <meta name="description" content="HTML 篇浩瀚星辰，莫忘心记。——Abner">
-<meta name="keywords" content="html">
+<meta name="keywords" content="zh-Hans">
 <meta property="og:type" content="article">
-<meta property="og:title" content="前端知识体系回顾-(HTML篇)">
+<meta property="og:title" content="樊启东">
 <meta property="og:url" content="https://fanqidong.github.io/2018/08/06/review-html/index.html">
 <meta property="og:site_name" content="樊启东">
 <meta property="og:description" content="HTML 篇浩瀚星辰，莫忘心记。——Abner">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/13702193-2f8ed8e77be2e041?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/13702193-e11aef08dd6f0cb7?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-12-11T04:51:47.615Z">
+<meta property="og:updated_time" content="2019-03-11T02:42:23.255Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="前端知识体系回顾-(HTML篇)">
+<meta name="twitter:title" content="樊启东">
 <meta name="twitter:description" content="HTML 篇浩瀚星辰，莫忘心记。——Abner">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/13702193-2f8ed8e77be2e041?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
@@ -171,7 +171,7 @@
 
 
 
-  <title>前端知识体系回顾-(HTML篇) | 樊启东</title>
+  <title> | 樊启东</title>
   
 
 
@@ -390,7 +390,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">前端知识体系回顾-(HTML篇)</h2>
+          <h2 class="post-title" itemprop="name headline"></h2>
         
 
         <div class="post-meta">
@@ -413,28 +413,6 @@
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -452,7 +430,7 @@
 
           
           
-             <span id="/2018/08/06/review-html/" class="leancloud_visitors" data-flag-title="前端知识体系回顾-(HTML篇)">
+             <span id="/2018/08/06/review-html/" class="leancloud_visitors" data-flag-title="">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -477,7 +455,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  4,201
+                  4,204
                 </span>
               
 
@@ -535,7 +513,7 @@
 <p>事件捕获 ：当用户触发点击事件后，顶层对象document 就会发出一个事件流，从最外层的DOM节点向目标元素节点传递，最终到达目标元素。</p>
 <p>事件处理 ：当到达目标元素之后，执行目标元素绑定的处理函数。如果没有绑定监听函数，则不做任何处理。</p>
 <p>事件冒泡 ：事件流从目标元素开始，向最外层DOM节点传递，途中如果有节点绑定了事件处理函数，这些函数就会被执行。</p>
-<p>利用事件冒泡原理可以实现 事件委托，所谓事件委托，就是在父元素上添加事件监听器，用以监听和处理子元素的事件，避免重复为子元素绑定相同的事件。当目标元素的事件被触发以后，这个事件就从目标元素开始，向最外层元素传递，最终冒泡到父元素上，父元素再通过event.target获取到这个目标元素，这样做的好处是，父元素只需绑定一个事件监听，就可以对所有子元素的事件进行处理了，从而减少了不必要的事件绑定，对页面性能有一定的提升。</p>
+<p>利用事件冒泡原理可以实现 事件委托，所谓事件委托，就是在父元素上添加事件监听器，用以监听和处理子元素的事件，避免重复为子元素绑定相同的事件。当目标元素的事件被触发以后，这个事件就从目标元素开始，向最外层元素传递，最终冒泡到父元素上，父元素再通过event.target获取到这个目标元素，这样做的好处是，父元素只需绑定一个事件监听，就可以对所有子元素的事件进行处理了，从而减少了不必要的事件绑定，对页面性能有一定的提升。<br><code>bash</code><br>javascript<br><code>bash</code></p>
 <h2 id="4、HTML解析过程"><a href="#4、HTML解析过程" class="headerlink" title="4、HTML解析过程"></a>4、HTML解析过程</h2><p>浏览器加载 html 文件以后，渲染引擎会从上往下，一步步来解析HTML标签，大致过程如下：</p>
 <p>用户输入网址，浏览器向服务器发出请求，服务器返回html文件；</p>
 <p>渲染引擎开始解析 html 标签，并将标签转化为DOM节点，生成 DOM树；</p>
@@ -623,35 +601,6 @@
     <div>
       
         
-<div class="my_post_copyright">
-  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
-
-  <!-- JS库 sweetalert 可修改路径 -->
-  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2018/08/06/review-html/">前端知识体系回顾-(HTML篇)</a></p>
-  <p><span>文章作者:</span><a href="/" title="访问 樊启东 的个人博客">樊启东</a></p>
-  <p><span>发布时间:</span>2018年08月06日 - 19:08</p>
-  <p><span>最后更新:</span>2018年12月11日 - 12:12</p>
-  <p><span>原始链接:</span><a href="/2018/08/06/review-html/" title="前端知识体系回顾-(HTML篇)">https://fanqidong.github.io/2018/08/06/review-html/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://fanqidong.github.io/2018/08/06/review-html/"  aria-label="复制成功！"></i></span>
-  </p>
-  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
-</div>
-<script> 
-    var clipboard = new Clipboard('.fa-clipboard');
-      $(".fa-clipboard").click(function(){
-      clipboard.on('success', function(){
-        swal({   
-          title: "",   
-          text: '复制成功',
-          icon: "success", 
-          showConfirmButton: true
-          });
-        });
-    });  
-</script>
-
       
     </div>
 
@@ -661,44 +610,12 @@
     
       <div>
         
-<div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
-  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
-    <span>打赏</span>
-  </button>
-  <div id="QR" style="display: none;">
-
-    
-      <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/wx.png" alt="樊启东 微信支付"/>
-        <p>微信支付</p>
-      </div>
-    
-
-    
-      <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/images/zfb.jpg" alt="樊启东 支付宝"/>
-        <p>支付宝</p>
-      </div>
-    
-
-    
-
-  </div>
-</div>
-
       </div>
     
 
     
 
     <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/html/" rel="tag"><i class="fa fa-tags"></i> html</a>
-          
-        </div>
       
 
       
@@ -825,7 +742,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
